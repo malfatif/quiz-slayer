@@ -1,0 +1,62 @@
+<ion-view title="8 - Matemática">
+  <ion-content padding="true" class="has-header">
+    <div>
+      <style>
+        .circle {
+            border-radius: 50%;
+        	width: 65px;
+        	height: 65px; 
+        	text-align:center;
+        	vertical-align:middle;
+        	display: table-cell;
+        	border:2px dotted black;
+        }
+        .secondary{
+            background:#ffc900;
+        }
+        .primary{
+            background:#ff8a00;
+        }
+        .result{
+            background:#ff8a56;
+        }
+      </style>
+
+      <center>
+        <p>
+        </p>
+        <div class="circle secondary">2</div>
+        <div class="circle secondary">4</div>
+        <div class="circle primary">5</div>
+        <div class="circle result">18</div>
+      </center>
+    </div>
+    <center>
+      <p>
+      </p>
+      <div class="circle secondary">9</div>
+      <div class="circle secondary">81</div>
+      <div class="circle primary">2</div>
+      <div class="circle result">153</div>
+    </center>
+    <div>
+      <center>
+        <p>
+        </p>
+        <div class="circle secondary">3</div>
+        <div class="circle secondary">10</div>
+        <div class="circle primary">7</div>
+        <div class="circle result">
+          <b>?</b>
+        </div>
+      </center>
+      <p></p>
+    </div>
+    <form class="list">
+      <label class="item item-input" name="resposta">
+        <input type="number" placeholder="Resposta" id="resposta" ng-model="resposta" ng-change="isRespostaErrada">
+      </label>
+    </form>
+    <button ng-click="avancar(resposta)" style="font-weight:600;color:#000000;border-radius:30px 30px 30px 30px;" class="button button-energized button-block">Avançar</button>
+  </ion-content>
+</ion-view>
